@@ -3,7 +3,7 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 const prefix = "/uploads/short-url/";
 const suffix = ".jsdos";
 
-function initializeJsdo(api) {
+function initializeJsdos(api) {
   api.decorateCooked((elem) => {
     elem.find(".attachment").each(function (i) {
       const el = $(this);
@@ -19,9 +19,9 @@ function initializeJsdo(api) {
 }
 
 export default {
-  name: "jsdos",
+  name: "doszone",
 
   initialize() {
-    withPluginApi("0.8.31", initializeJsdo);
+    withPluginApi("0.8.31", initializeJsdos);
   }
 };

@@ -1,4 +1,4 @@
 plugins:
-  jsdos_enabled:
+  doszone_enabled:
     default: true
     client: true
