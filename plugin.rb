@@ -9,3 +9,7 @@
 enabled_site_setting :doszone_enabled
 
 PLUGIN_NAME ||= 'doszone'
+
+after_initialize do
+  load File.expand_path('../lib/application_helper_edits.rb', __FILE__)
+end
